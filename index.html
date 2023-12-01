@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">竹中 舜 / Shun Takenaka</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#internship">Internship</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">竹中 舜 / Shun Takenaka</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                    <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+                    <li><a href="#internship" onclick="toggleMenu()">Internship</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skill</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/Profile.JPG" alt="Shun Takenaka profile picture " />
+
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Shun Takenaka</h1>
+                <a href="https://www.cyber.t.u-tokyo.ac.jp/ja">Cyber Interface Lab.</a>
+                <p class="section__text__p2">The Graduate School of the University of Tokyo</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/RESUME.pdf')" >
+                     Download Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                     Contact Info
+                    </button>
+                </div>
+                <div class="socials-container">
+                    <img src="./assets/instagram-icon.png" alt="My Instagram Account" class="icon" onclick="location.href='https://instagram.com/shun_takenaka?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr'"
+                    />
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Moyarzabal'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                  <img
+                    src="./assets/GOD.JPG"
+                    alt="Profile picture"
+                    class="about-pic"
+                  />
+                </div>
+                <div class="about-details-container">
+                  <div class="about-containers">
+                    <div class="details-container">
+                      <h2>Hobbies</h2>
+                      <ul>
+                        <li class="section__text__p3">スポーツ観戦（野球、サッカー）</li>
+                        <li class="section__text__p3">フットサル</li>
+                        <li class="section__text__p3">ゲーム</li>
+                      </ul>
+                    </div>
+                    <div class="details-container">
+                      <h2>Languages</h2>
+                      <p class="section__text__p3"> Japanese：Native <br />  English：TOEFL iBT 81 (Apr. 2022) </p>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <p class="section__text__p3">
+                      大学院では、VR体験が記憶に及ぼす影響や、VR空間での視覚的若返りが自己認識に与える影響を研究しています。
+                      休みの日はYoutubeを見ながらゲームをしてダラダラしていることが多いですが、週に1回はフットサルなどの運動をするように心がけています。
+                    </p>
+                  </div>
+                </div>
+            </div>  
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'" />  
+        </section>
+        <section id="education">
+            <h1 class="title">Education</h1>
+            <div class="details-container">
+                <div>
+                    <ul>
+                        <li>
+                            <h2>Apr. 2015 ~ Mar. 2018 : 私立 渋谷教育学園幕張高等学校</h2>
+                            <p class="section__text__p3">Shibuya Education Academy Makuhari High School</p>
+                        </li>
+                        <li>
+                            <h2>Apr. 2019 ~ Mar. 2023 : 東京大学 工学部 機械情報工学科</h2>
+                            <p class="section__text__p3">Bachelor's degree at the Department of Mechano-Infomatics, The University of Tokyo</p>
+                        </li>
+                        <li>
+                            <h2>Apr. 2023 ~ Mar. 2025(Expected) : 東京大学大学院 情報理工学系研究科 知能機械情報学専攻</h2>
+                            <p class="section__text__p3">Master's degree at the Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+
+                </p>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#publication'" />  
+        </section>  
+        <section id="publication">
+            <h1 class="title">Publication</h1>
+            <div class="details-container">
+                <div>
+                    <ul class="publications-container">
+                        <li>
+                            <a class="publication-article" href="https://conference.vrsj.org/ac2022/program/doc/3C1-4.pdf">澤田怜旺, 田北陽士, <b>竹中舜</b>, 溝口創太, 工藤龍, 鳴海拓志. (2022). VRPTにより形成される特定集団への共感の集団外への転移可能性の検証. 第27回日本バーチャルリアリティ学会大会論文集 3C1-4.</a>
+                        </li>
+                        <li>
+                            <a class="publication-article" href="./assets/SAP Poster 最終版.pdf"><b>Shun Takenaka</b>, Takato Mizuho, Takuji Narumi and Hideaki Kuzuoka. (2023). Who Are You, Again?: Effect of Changing Partners' Avatars and Virtual Environments on Profile Memory. ACM SAP'23.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+
+                </p>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#internship'" />  
+        </section>  
+        <section id="internship">
+            <h1 class="title">Internship</h1>
+            <div class="about-details-container">
+                <div  class="about-containers">
+                    <div class="details-container">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h2>株式会社日本経済新聞社：HACK The Nikkei (Sep. 2023)</h2>
+                                    <p class="section__text__p3">
+                                        ハッカソン形式で、日経電子版の新機能を実装する課題。<br>
+                                        ニュース記事に対して、関連記事とその要約をポップアップで表示するGoogle Chrome拡張機能を実装。<br>
+                                        フロントエンド部分を担当。<br>
+                                    </p>
+                                    <p class="section__text__p3">
+                                        使用技術： JavaScript(React), HTML, CSS, python
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <h2>株式会社KDDI：アプリケーションエンジニアコース (Sep. 2023)</h2>
+                                    <p class="section__text__p3">
+                                        アジャイル開発（スクラム）でLineBotを実装する課題。<br>
+                                        PO(Product Owner)兼SM(Scrum Master)として全体の総括、進捗管理、サポートを行なった。<br>
+                                    </p>
+                                    <p class="section__text__p3">
+                                        使用技術： Python, AWS(API GW, lambda), GPT API
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>株式会社Cygames：ウィンターインターンシップ (Nov~Dec. 2023)</h2>
+                                    <p class="section__text__p3">
+                                        Unityでゲームを開発する個人課題。<br>
+                                        1ヶ月のプレワーク期間で基本的な実装をし、1日のインターンシップ当日に拡張した機能を開発した。<br>
+                                    </p>
+                                    <p class="section__text__p3">
+                                        使用技術： Unity, C#
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>株式会社日本総合研究所：DXエンジニアコース (Dec. 2023)</h2>
+                                    <p class="section__text__p3">
+                                        アジャイル手法によるAndroidアプリの開発で、DXの考え方を学ぶプログラム。<br>
+                                        </p>
+                                    <p class="section__text__p3">
+                                        使用技術： Java, AndroidStudio
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>富士フイルム株式会社：体験型ハッカソン (Jan. 2024)</h2>
+                                    <p class="section__text__p3">
+                                        富士フイルムの情報科学分野での取り組みを理解した上で、今後情報技術を活用してさらなる価値を創出するために、これら情報技術を使いやすくする、そして、活用の幅を広げるための新たなアイデア・ソリューションについて考えるハッカソン。<br>
+                                    </p>
+                                    <p class="section__text__p3">
+                                        使用技術： ???
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />  
+        </section>
+        <section id="skills">
+            <h1 class="title">Skill</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <div class="article-container">
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>Python</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p>4 years</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>C#/Unity</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p>3 years</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>C/C++</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>3 years</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>HTML/CSS</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>1 year</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>JavaScript</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>1 year</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>R</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>3 year</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>Swift/Xcode</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p>1 year</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h2>Kotlin・Java /AndoroidStudio</h2>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p>1 year</p>
+                            </div>
+                        </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />  
+        </section>
+        <section id="projects">
+            <h1 class="title">Project</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    <img
+                        src="./assets/VR野球盤.png"
+                        alt="Project 1"
+                        class="project-img"
+                    />
+                    </div>
+                    <h2 class="experience-sub-title project-title">VR野球BAN!</h2>
+                    <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Moyarzabal/VR_Yakyu_BAN'"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://youtu.be/9GYP-uZP9rg'"
+                    >
+                        Live Demo
+                    </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    <img
+                        src="./assets/VRFPS.png"
+                        alt="Project 2"
+                        class="project-img"
+                    />
+                    </div>
+                    <h2 class="experience-sub-title project-title">VR Multiplayer FPS</h2>
+                    <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Moyarzabal/VR_multi_FPS'"
+                    >
+                        Github
+                    </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    <img
+                        src="./assets/VirtualRubik'sCube.png"
+                        alt="Project 3"
+                        class="project-img"
+                    />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Virtual Rubik's Cube</h2>
+                    <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Moyarzabal/virtual_rubik-s_cube'"
+                    >
+                        Github
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+        <section id="contact">
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                <img
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:moyarzabalstake@gmail.com">moyarzabalstake@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                <img
+                    src="./assets/github.png"
+                    alt="GitHub icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://github.com/Moyarzabal">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#internship">Internship</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Shun Takenaka. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
