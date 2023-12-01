@@ -42,9 +42,17 @@ nav, .nav-links {
 }
 
 nav {
+    position:fixed;
+    grid-area: topbar;
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
+    z-index: 1;
+    background-color: rgb(163, 163, 163, 0.53);
+    width: 100%; /*横幅を100%に*/
+    padding: 0 0;
+    top: auto 0;
+    left: auto 0;
 }
 
 .nav-links {
@@ -104,21 +112,32 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
     width: fit-content;
+    height: 600px;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    border-radius: 1rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    z-index: 3;
 }
 
 .menu-links a {
     display: block;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
 }
 
 .menu-links li {
@@ -157,15 +176,15 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 
-#internship {
+/* #internship {
     height: 170vh;
-}
+} */
 
 .section-container {
     display: flex;
@@ -220,6 +239,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    margin-top: 10px;
 }
 
 #socials-container {
