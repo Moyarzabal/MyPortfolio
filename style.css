@@ -410,11 +410,6 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 }
-.experience-details-container-2 {
-display: flex;
-justify-content: center;
-flex-direction: column;
-}
 
 .article-container {
 display: flex;
@@ -435,6 +430,17 @@ gap: 0.5rem;
 article .icon {
 cursor: default;
 }
+.experience-details-container-2 {
+    display: flex;
+    overflow-x: auto; /* 水平方向のスクロールを可能にする */
+    white-space: nowrap; /* 子要素を同じ行に保持する */
+}
+
+  .details-container-2 {
+      min-width: 300px; /* 各プロジェクトの最小幅を設定 */
+      display: inline-block; /* 水平方向に配置 */
+      margin-right: 2rem; /* 隣のプロジェクトとの間隔 */
+  }
 
 /* PUBLICATIONS */
 #publication {
@@ -479,7 +485,9 @@ cursor: default;
     color: black;
     border-color: rgb(163, 163, 163);
   }
-  
+  .btn-black-text {
+    color: white;
+  }
   /* CONTACT */
   
   #contact {
