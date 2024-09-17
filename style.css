@@ -443,7 +443,7 @@ cursor: default;
   }
 
 /* PUBLICATIONS */
-#publication {
+#publication, #education {
     position: relative;
 }
 .publication-details-container {
@@ -453,11 +453,15 @@ cursor: default;
 }
 .publications-container {
     justify-content: space-evenly;
+    padding: 3%;
 }
 .publication-article {
     font-size: 1.5rem;
     align-content: left;
+
 }
+
+
 
 /* PROJECTS SECTION */
 

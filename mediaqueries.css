@@ -68,9 +68,14 @@
     }
     #profile {
       margin-bottom: 0;
+      padding-top: 20vh;
+      padding: 15vh;
     }
     article {
       font-size: 0.75rem;
+    }
+    .details-container {
+      font-size: 0.5rem;
     }
     footer nav {
       height: fit-content;
@@ -85,6 +90,7 @@
     .about-containers {
     justify-content: center;
     flex-direction: row;
+    font-size: 0.5rem;
     }
     
     .contact-info-container {
@@ -132,18 +138,35 @@
         min-width: 300px; /* 各プロジェクトの最小幅を設定 */
         display: inline-block; /* 水平方向に配置 */
         margin-right: 2rem; /* 隣のプロジェクトとの間隔 */
+        font-size: 0.75rem;
     }
     .section__text__p3 {
       display: none;
     }
+    .internship_company {
+      font-size: 1.25rem;
+    }
     .section__text__p2 {
+      font-size: 0.5rem;
+    }
+    .publication-article {
       font-size: 1rem;
     }
     .btn-container-2 {
-      flex-direction: column;
+      display: flex;
+    }
+    .btn {
+      font-size: 0.7rem;
     }
     .about-containers p, .about-containers li{
       color: black;
-      font-size: 1.5rem;
+      font-size: 0.75rem;
+    }
+    #hamburger-nav {
+      height: 7vh;
+    }
+    .publication-authors,
+    .publication-publisher {
+      display: none;
     }
   }
