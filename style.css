@@ -322,9 +322,7 @@ section {
     height: 1.5rem;
 }
 
-.btn-container {
-    gap: 1rem;
-}
+
 
 /* ABOUT SECTION */
 
@@ -458,9 +456,22 @@ cursor: default;
 .publication-article {
     font-size: 1.5rem;
     align-content: left;
-
 }
 
+.publication-authors,
+.publication-titles {
+    /* line-height: 1.5; */
+    margin-bottom: -1%;
+}
+.publication-publisher {
+    margin-bottom: 2%;
+}
+
+.publication-authors,
+.publication-publisher {
+    font-size: 1rem;
+
+}
 
 
 /* PROJECTS SECTION */
