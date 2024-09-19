@@ -418,6 +418,15 @@ gap: 2.5rem;
 justify-content: space-evenly;
 }
 
+.article-container-2 {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-evenly;
+}
+
 article {
 display: flex;
 width: auto;
@@ -439,6 +448,19 @@ cursor: default;
       display: inline-block; /* 水平方向に配置 */
       margin-right: 2rem; /* 隣のプロジェクトとの間隔 */
   }
+
+.skill-container {
+    margin-right: 1rem;
+    min-width: 130px;
+    display: inline-block;
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: left;
+}
 
 /* PUBLICATIONS */
 #publication, #education {
@@ -503,6 +525,8 @@ cursor: default;
   .btn-black-text {
     color: white;
   }
+
+
   /* CONTACT */
   
   #contact {
@@ -553,4 +577,8 @@ cursor: default;
   
   footer p {
     text-align: center;
+  }
+
+  #skills2 {
+    display: none;
   }

@@ -58,7 +58,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     body {
       align-items: center;
     }
@@ -168,5 +168,13 @@
     .publication-authors,
     .publication-publisher {
       display: none;
+    }
+
+    #skills {
+      display: none;
+    }
+
+    #skills2 {
+      display: block;
     }
   }
